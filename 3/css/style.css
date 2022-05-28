@@ -1,0 +1,83 @@
+html{
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-size: 100%;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    
+}
+
+
+/* LAYOUT */
+
+.group{
+    max-width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: pink;
+}
+
+
+
+
+article, aside{
+    border-radius: 10px;
+    float: left;
+   
+}
+
+article{
+    background-color: red;
+    width: 62.5%;  
+    /* 500px */
+    margin-right: 12.5%;
+    font-size: 2em;
+}
+
+
+aside{
+    background-color: green;
+    width: 25%;
+    font-size: 2em;
+    /* 200px */
+}
+
+article p{
+    padding:  1em;
+    /* 50px */
+}
+
+aside p{
+    padding: 1em;
+    /* 50px */
+}
+
+
+
+
+
+
+
+
+/* CLEARFIX */
+
+.group::before,
+.group::after{
+    content: " ";
+    display: table;
+}
+
+.group::after{
+    clear: both;
+}
+
+
+
+
+
+
