@@ -1,0 +1,126 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.group {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: pink;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+header h1 {
+  width: 50%;
+  margin: 0;
+  border: 2px solid red;
+  font-size: 4em;
+}
+
+header p {
+  font: 0.9em/1.35em "Arial", "Verdana", "Tahoma", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 70%;
+}
+
+article, aside {
+  border-radius: 10px;
+  float: left;
+  height: 100%;
+}
+
+article {
+  background-color: red;
+  width: 70%;
+  margin-right: 2%;
+}
+
+aside {
+  background-color: blue;
+  width: 28%;
+}
+
+footer {
+  height: 10%;
+  width: 100%;
+  background-color: grey;
+  margin-top: 0%;
+}
+
+.menu {
+  background-color: pink;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 20%;
+}
+
+.menu li, .menu a {
+  display: inline-block;
+  text-decoration: none;
+  font: 0.9em/1.35em "Arial", "Verdana", "Tahoma", sans-serif;
+  font-size: larger;
+  color: whitesmoke;
+  padding: .5em;
+  cursor: pointer;
+}
+
+.menu li:hover, .menu a:hover {
+  text-decoration: underline;
+}
+
+article {
+  background-color: blue;
+  border-top: 2px solid yellowgreen;
+}
+
+.dva article {
+  background-color: grey;
+}
+
+.tri article {
+  background-color: pink;
+}
+
+/* CLEARFIX */
+.group::before,
+.group::after {
+  content: " ";
+  display: table;
+}
+
+.group::after {
+  clear: both;
+}
+/*# sourceMappingURL=style.css.map */
