@@ -1,0 +1,20 @@
+@mixin myButton {
+    background-color: aquamarine;
+    color: orange;
+    border-radius: 1em;
+    border: 1em solid darkkhaki;
+    width: 10em;
+    display: block;
+    margin: 1em auto;
+    
+}
+
+
+@mixin myParagraph{
+   font: $font;
+   background-color: bisque;
+   margin-top: 2em;
+   text-align: justify;
+   margin-left: 1em;
+   margin-right: 1em;
+}
